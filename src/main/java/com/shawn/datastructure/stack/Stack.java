@@ -1,4 +1,4 @@
-package datastructure.stack;
+package com.shawn.datastructure.stack;
 
 /**
  * @author Deng
@@ -9,5 +9,9 @@ public interface Stack<T> {
 
     T pop();
 
+    /**
+     * 仅用来查看下一个出栈的对象
+     * @return
+     */
     T peek();
 }
