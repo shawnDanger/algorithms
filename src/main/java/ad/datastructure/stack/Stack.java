@@ -1,4 +1,4 @@
-package com.shawn.datastructure.stack;
+package ad.datastructure.stack;
 
 /**
  * @author Deng
