@@ -1,11 +1,11 @@
 package ad.datastructure.linked;
 
 public interface LinkedList<T> extends Iterable<T>{
-    void append(T data);
+    int append(T data);
 
-    void insert(int index, T data);
+    int insert(int index, T data);
 
-    void removeWithIndex(int index);
+    int removeWithIndex(int index);
 
     T get(int index);
 

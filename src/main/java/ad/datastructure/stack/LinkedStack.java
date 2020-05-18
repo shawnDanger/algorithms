@@ -1,7 +1,7 @@
 package ad.datastructure.stack;
 
 
-import ad.datastructure.linked.LinkedListNode;
+import ad.datastructure.linked.SinglyLinkedListNode;
 
 /**
  * 使用链表实现栈
@@ -9,15 +9,15 @@ import ad.datastructure.linked.LinkedListNode;
  */
 public class LinkedStack<T> implements Stack<T> {
 
-    private LinkedListNode<T> header=new LinkedListNode<>();
+    private SinglyLinkedListNode<T> header=new SinglyLinkedListNode<>();
     @Override
     public void push(T t) {
-        header = new LinkedListNode<T>(null,t, header);
+        header = new SinglyLinkedListNode<T>(t, header);
     }
 
     @Override
     public T pop() {
-        LinkedListNode<T> next = header.next;
+        SinglyLinkedListNode<T> next = header.next;
         if (next == null) return null;
         T data = header.data;
         header.next=null;
