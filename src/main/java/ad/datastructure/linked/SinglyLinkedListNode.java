@@ -16,4 +16,11 @@ public class SinglyLinkedListNode<T> {
         this.data = data;
         this.next = next;
     }
+
+    @Override
+    public String toString() {
+        return "SinglyLinkedListNode{" +
+                "data=" + data +
+                '}';
+    }
 }

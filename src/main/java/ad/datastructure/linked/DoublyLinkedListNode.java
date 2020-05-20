@@ -5,16 +5,11 @@ package ad.datastructure.linked;
  * @param <T>
  */
 public class DoublyLinkedListNode<T> {
-    public T data;
     public DoublyLinkedListNode<T> next;
+    public T data;
     public DoublyLinkedListNode<T> prev;
 
     public DoublyLinkedListNode() {
-    }
-
-    public DoublyLinkedListNode(T data, DoublyLinkedListNode<T> next) {
-        this.data = data;
-        this.next = next;
     }
 
     public DoublyLinkedListNode(DoublyLinkedListNode<T> prev, T data, DoublyLinkedListNode<T> next) {
